@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRD.Common.Services", "..\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRD.Common.Logging.UnitTests", "MRD.Common.Logging.UnitTests\MRD.Common.Logging.UnitTests.csproj", "{6BACF302-0676-43BC-A7E0-324F55D8B889}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRD.Common.Services.UnitTests", "MRD.Common.TimeService.UnitTests\MRD.Common.Services.UnitTests.csproj", "{4EF054E2-133F-4916-8B62-746478D55D6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6BACF302-0676-43BC-A7E0-324F55D8B889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BACF302-0676-43BC-A7E0-324F55D8B889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BACF302-0676-43BC-A7E0-324F55D8B889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF054E2-133F-4916-8B62-746478D55D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF054E2-133F-4916-8B62-746478D55D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF054E2-133F-4916-8B62-746478D55D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF054E2-133F-4916-8B62-746478D55D6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

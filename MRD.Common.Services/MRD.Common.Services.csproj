@@ -50,8 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateTime\ITimeService.cs" />
-    <Compile Include="DateTime\TimeService.cs" />
+    <Compile Include="DateTimeServices\ITimeService.cs" />
+    <Compile Include="DateTimeServices\TimeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
