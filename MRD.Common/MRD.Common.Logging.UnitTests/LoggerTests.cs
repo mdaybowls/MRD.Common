@@ -178,7 +178,7 @@ namespace MRD.Common.Logging.UnitTests
         public void LoggerService_GetLogger_ReturnsLogger()
         {
             var sut = new LoggerService();
-            var logger = sut.GetLogger();            
+            var logger = sut.GetLogger();                       
             Assert.IsTrue(logger.GetType() == typeof(NLog.Logger));
         }
     }
