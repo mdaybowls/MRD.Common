@@ -46,7 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ILogger.cs" />
+    <Compile Include="ILoggerService.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="LoggerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

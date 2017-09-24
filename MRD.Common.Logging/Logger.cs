@@ -1,55 +1,58 @@
 ﻿using System;
-using NLog;
 
 namespace MRD.Common.Logging
 {
     public class Logger : ILogger
     {
-        private static readonly NLog.Logger LocalLogger = LogManager.GetCurrentClassLogger();
+        private readonly NLog.ILogger _localLogger;
 
+        public Logger(ILoggerService loggerService)
+        {
+            _localLogger = loggerService.GetLogger();
+        }
         public void LogDebug(string message)
         {
-            LocalLogger.Debug(message);
+            _localLogger.Debug(message);
         }
 
         public void LogDebug(string messageFormat, params object[] values)
         {
-            LocalLogger.Debug(messageFormat, values);
+            _localLogger.Debug(messageFormat, values);
         }
 
         public void LogError(string messageFormat, params object[] values)
         {
-            LocalLogger.Error(messageFormat, values);
+            _localLogger.Error(messageFormat, values);
         }
 
         public void LogError(Exception ex, string message)
         {
-            LocalLogger.Error(ex, message);
+            _localLogger.Error(ex, message);
         }
 
         public void LogError(Exception ex, string messageFormat, params object[] values)
         {
-            LocalLogger.Error(ex, messageFormat, values);
+            _localLogger.Error(ex, messageFormat, values);
         }
 
         public void LogInfo(string message)
         {
-            LocalLogger.Info(message);
+            _localLogger.Info(message);
         }
 
         public void LogInfo(string messageFormat, params object[] values)
         {
-            LocalLogger.Info(messageFormat, values);
+            _localLogger.Info(messageFormat, values);
         }
 
         public void LogWarning(string message)
         {
-            LocalLogger.Warn(message);
+            _localLogger.Warn(message);
         }
 
         public void LogWarning(string messageFormat, params object[] values)
         {
-            LocalLogger.Warn(messageFormat, values);
+            _localLogger.Warn(messageFormat, values);
         }
     }
 }
